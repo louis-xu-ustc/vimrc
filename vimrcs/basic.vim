@@ -43,6 +43,16 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sets show the line number
+set nu
+
+" Set auto indent
+set autoindent
+set cindent
+
+" set tab width
+set tabstop=4
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
