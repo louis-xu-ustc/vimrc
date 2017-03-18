@@ -14,28 +14,28 @@ I would of course recommend using the awesome version.c
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-	git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone https://github.com/louis-xu-ustc/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [Source Code Pro font from Adobe](https://typekit.com/fonts/source-code-pro) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
 
 ## How to install the Basic version?
-The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim).
+The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/louis-xu-ustc/vimrc/blob/master/vimrcs/basic.vim).
 
 This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone https://github.com/louis-xu-ustc/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
-
-
-## How to install on Windows?
-
-Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
 
 
 ## How to install on Linux
 
 If you have vim aliased as `vi` instead of `vim`, make sure to either alias it: `alias vi=vim`. Otherwise, `apt-get install vim`
+
+## How to install on Mac
+I highly recommend you to install with `brew install vim` since this version of vim supports `+clipboard` that allows us to copy/paste contents between vim and system's clipboard.
+Remember to update you `bash_profile` with an alias `alias vim='path for vim executable binary/vim'`
+
 
 ## How to update to latest version?
 
@@ -55,9 +55,6 @@ Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
 ![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-This vimrc even works on Windows!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
 
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2):
 ![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
