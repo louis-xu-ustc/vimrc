@@ -46,12 +46,13 @@
 " Sets show the line number
 set nu
 
-" Set auto indent
-set autoindent
-set cindent
+"共享剪贴板  
+set clipboard=unnamedplus
 
-" set tab width
-set tabstop=4
+" 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
 
 " Sets how many lines of history VIM has to remember
 set history=500
@@ -214,6 +215,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Set auto indent
+set autoindent
+set cindent
 
 """"""""""""""""""""""""""""""
 " => Visual mode related

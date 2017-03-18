@@ -41,15 +41,25 @@ if has("cscope")
  set csverb
 endif
 
-nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+"original version that doesn't work on Mac
+"nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+"nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+"nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
+"updated version that works well on Mac
+nmap <F1> :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <F2> :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <F3> :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <F4> :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <F5> :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <F6> :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <F7> :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <F8> :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
