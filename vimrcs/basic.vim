@@ -46,8 +46,10 @@
 " Sets show the line number
 set nu
 
-"共享剪贴板  
-set clipboard=unnamedplus
+"共享剪贴板
+if has('unnameplus') 
+    set clipboard=unnamedplus
+endif
 
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
