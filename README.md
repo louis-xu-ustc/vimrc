@@ -83,6 +83,7 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
+* [vim-neocomplete](https://github.com/Shougo/neocomplete.vim): neocomplete is the abbreviation of "neo-completion with cache". It provides keyword completion system by maintaining a cache of keywords in the current buffer.
 
 
 ## Included color schemes
