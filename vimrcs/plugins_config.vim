@@ -9,6 +9,13 @@
 """"""""""""""""""""""""""""""
 let g:neocomplete#enable_at_startup = 1
 
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+
 """"""""""""""""""""""""""""""
 " => Taglist plugin
 """"""""""""""""""""""""""""""
@@ -17,8 +24,8 @@ let Tlist_Auto_Open=1
 """""""""""""""""""""""""""""" 
 " Tag list (ctags) 
 """""""""""""""""""""""""""""""" 
-"let Tlist_Ctags_Cmd = '/usr/bin/ctags' 
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+"let Tlist_Ctags_Cmd='/usr/local/bin/ctags' "setting for mac
+let Tlist_Ctags_Cmd = '/usr/bin/ctags' 
 let Tlist_Show_One_File = 1 "不同时显示多个文件的tag，只显示当前文件的 
 let Tlist_Exit_OnlyWindow = 1 "如果taglist窗口是最后一个窗口，则退出vim 
 let Tlist_Use_Right_Window = 1 "在右侧窗口中显示taglist窗口
@@ -35,7 +42,8 @@ let Tlist_Exit_OnlyWindow=1
 " => cscope plugin
 """"""""""""""""""""""""""""""
 if has("cscope")
- set csprg=/usr/local/bin/cscope
+"set csprg=/usr/local/bin/cscope "setting for mac
+set csprg=/usr/bin/cscope
  set csto=1
  set cst
  set nocsverb
