@@ -35,7 +35,8 @@ let Tlist_Exit_OnlyWindow=1
 " => cscope plugin
 """"""""""""""""""""""""""""""
 if has("cscope")
- #set csprg=/usr/local/bin/cscope
+"specify the installing location of cscope
+"set csprg=/usr/local/bin/cscope
  set csprg=/usr/bin/cscope
  set csto=1
  set cst

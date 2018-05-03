@@ -170,6 +170,12 @@ try
 catch
 endtry
 
+" Highlight columns 80 and 120
+" highlight ColorColumn ctermbg=235 guibg=#2c2d27
+" let &colorcolumn="80,".join(range(120,999),",")
+" let &colorcolumn='80,120'
+let &colorcolumn='80'
+
 set background=dark
 
 " Set extra options when running in GUI mode
