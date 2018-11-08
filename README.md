@@ -30,7 +30,7 @@ This is useful to install on remote servers where you don't need many plugins an
 
 ## How to install on Linux
 
-The best version of `vim` is `vim-nox` that can work perfectly with neo-complete. Please remove all the other versions of vim, like `vi`, `vim-gnome`, `vim-gtk`, `vim-tiny`, and only keep `vim-nox`. Also, we recommend to use `range` combined with those tools.
+The best version of `vim` is `vim-nox` that can work perfectly with neo-complete (neocomplete requires Vim 7.3.885+ compiled with if_lua. If :echo has("lua") returns 1, then you're done). Please remove all the other versions of vim, like `vi`, `vim-gnome`, `vim-gtk`, `vim-tiny`, and only keep `vim-nox`. Also, we recommend to use `range` combined with those tools.
 If you have vim aliased as `vi` instead of `vim`, make sure to either alias it: `alias vi=vim`. Otherwise, `apt-get install vim`
 
 ## How to install on Mac
